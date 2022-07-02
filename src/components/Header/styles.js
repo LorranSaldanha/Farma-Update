@@ -60,17 +60,19 @@ export const List = styled.ul`
   top: 0;
   left: -100%;
   width: 100%;
-  height:100vh;
   min-height: 100vh;
   margin: 0;
-  padding: 80px 0;
+  padding:0 8.0rem ;
   list-style: none;
   background-color: #003C8D;
+  padding:8.0rem;
+
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
   transition-duration: .25s;
 `
 
 export const ButtonLink =styled(Link)`
+    margin:1.0rem 0;
     margin-bottom: 1em;
     display: block;
     font-family: 'Montserrat';

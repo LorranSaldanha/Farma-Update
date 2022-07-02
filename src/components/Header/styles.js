@@ -61,12 +61,10 @@ export const List = styled.ul`
   left: -100%;
   width: 100%;
   min-height: 100vh;
-  margin: 0;
-  padding:0 8.0rem ;
+  margin:-5.0rem 0;
+  padding: 10.0rem ;
   list-style: none;
   background-color: #003C8D;
-  padding:8.0rem;
-
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
   transition-duration: .25s;
 `

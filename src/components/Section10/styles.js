@@ -38,6 +38,7 @@ export const Centraltitle = styled.h1`
     border-radius:${props => props.bar ? '3.9rem' : 'none'};
     padding:${props => props.bar ? '1.0rem ' : '3.0rem 0'};
     color:${props => props.bar ? '#656565' : '#FFF'};
+    display:${(props) => props.bar ? "block" : "none"};
 
     font-family: 'Montserrat';
     font-style: normal;

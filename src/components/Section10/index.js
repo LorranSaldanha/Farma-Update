@@ -22,9 +22,13 @@ export function Section10() {
                 <Header />
                 <ContainerImage>
                     <CentralImage src={Image}></CentralImage>
+
+                    {/* DEPRECATED */}
                     {/* <Centraltitle>meu box</Centraltitle> */}
+                    {/* DEPRECATED */}
+
                 </ContainerImage>
-                <Centraltitle bar="bar" >seja associado</Centraltitle>
+                <Centraltitle bar="bar" >adicionar - seja associado</Centraltitle>
                 <Inputfields>
                     <Input placeholder=" logo:" type="file" ></Input>
                     <Input placeholder="titulo :"></Input>

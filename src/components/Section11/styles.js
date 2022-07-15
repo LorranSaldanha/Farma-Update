@@ -20,7 +20,7 @@ export const CentralImage = styled.img`
     display:block;
     width:100%;
     max-width:30% ;
-    margin:10.0rem auto;
+    margin:7.0rem auto;
     filter:invert(1);
 
 `
@@ -30,7 +30,7 @@ export const Centraltitle = styled.h1`
 
     background:${props => props.bar ? '#D9D9D9' : 'transparent'};
     font-size:${props => props.bar ? '1.8rem' : '2.4rem'};
-    margin:${props => props.bar ? '3.0rem auto' : '-10.0rem auto'};
+    margin:${props => props.bar ? '3.0rem auto' : '-7.0rem auto'};
     border-radius:${props => props.bar ? '3.9rem' : 'none'};
     padding:${props => props.bar ? '1.0rem ' : '3.0rem 0'};
     color:${props => props.bar ? '#656565' : '#FFF'};

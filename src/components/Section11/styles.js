@@ -18,8 +18,8 @@ export const ContainerImage = styled.div`
 `
 export const CentralImage = styled.img`
     display:block;
-    width:100%;
-    max-width:30% ;
+    width:20%;
+    /* max-width:30% ; */
     margin:7.0rem auto;
     filter:invert(1);
 

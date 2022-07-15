@@ -26,7 +26,7 @@ export function Section11() {
                 </ContainerImage>
                 <Centraltitle bar="bar" >adicionar - notificações</Centraltitle>
                 <Inputfields>
-                    <Input placeholder=" titulo:" ></Input>
+                    <Input placeholder=" titulo :" ></Input>
                     <Input placeholder="mensagem :"></Input>
                     <Input placeholder="fonte :"></Input>
                     <Input placeholder="ativo :"></Input>

@@ -12,20 +12,25 @@ export const Container = styled.div`
 `
 export const ContainerImage = styled.div`
     width: 100%;
-    height: 35.0rem;
+    height:30.0rem;
     background: #003C8D;
-    
+    @media only screen and (min-width:768px){
+        height: 48.0rem;
+        
+    }
 `
 export const CentralImage = styled.img`
-    display:block;
-    border:solid #FFF .060rem;
-    width:100%;
-    max-width:80% ;
-    margin:10.0rem auto;
-    border-radius:2.0rem;
-    -webkit-box-shadow: 0px 0px 20px 5px rgba(238, 238, 238, 1);
-    -moz-box-shadow: 0px 0px 20px 5px rgba(238, 238, 238, 1);
-    box-shadow: 0px 0px 20px 5px rgba(238, 238, 238, 1);
+        display:block;
+        border:solid #FFF .060rem;
+        width:60%;
+        margin:10.0rem auto;
+        border-radius:2.0rem;
+        -webkit-box-shadow: 0px 0px 20px 5px rgba(238, 238, 238, 1);
+        -moz-box-shadow: 0px 0px 20px 5px rgba(238, 238, 238, 1);
+        box-shadow: 0px 0px 20px 5px rgba(238, 238, 238, 1);
+    @media only screen and (min-width:768px){
+        max-width:50%;
+    }
 
 `
 export const Centraltitle = styled.h1`

@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 import api from "../../services/api"
 import Image from '..//..//assets/Plus.png'
 import { Header } from "../Header/"
+import { Table } from "../Table";
 
 
 export function Section1() {
@@ -66,7 +67,8 @@ export function Section1() {
 
                     <Button onClick={(e) => handleClick(e)} >Enviar</Button>
                 </Inputfields>
-                <BarTop>
+                <Table/>
+                {/* <BarTop>
                     <ItemsBarTop>central</ItemsBarTop>
                     <ItemsBarTop>endereço</ItemsBarTop>
                     <ItemsBarTop>ativar</ItemsBarTop>
@@ -78,7 +80,7 @@ export function Section1() {
                         <CheckItem type='checkbox' className="switch_1" value={item.ativo}></CheckItem>
                     </BarTop>
                 ))}
-                <BarTop ContentItems></BarTop>
+                <BarTop ContentItems></BarTop> */}
             </Container>
         </>
     );

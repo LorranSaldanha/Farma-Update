@@ -22,9 +22,9 @@ export function Section10() {
                 <Header />
                 <ContainerImage>
                     <CentralImage src={Image}></CentralImage>
-
+                    
                     {/* DEPRECATED */}
-                    {/* <Centraltitle>meu box</Centraltitle> */}
+                    <Centraltitle>meu box</Centraltitle>
                     {/* DEPRECATED */}
 
                 </ContainerImage>

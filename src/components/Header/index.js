@@ -24,6 +24,8 @@ export function Header() {
         <ButtonLink to="/finalizarvenda">acumular troco</ButtonLink>
         <ButtonLink to="/resgatartroco">resgatar troco</ButtonLink>
         <ButtonLink to="/meubox">meu box</ButtonLink>
+        <ButtonLink to="/sejaassociado">Associe-se</ButtonLink>
+        <ButtonLink to="/notificacoes">notificações</ButtonLink>
       </List>
     </HamburgerMenu>
   )

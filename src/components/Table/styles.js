@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const TableItmes = styled.table`
     width:100%;
-    margin:1.0rem ;
+    margin: 0 ;
     padding:1.0rem ;
     border-collapse:collapse;
     display:flexbox;
@@ -10,24 +10,15 @@ export const TableItmes = styled.table`
 `
 export const Tbody = styled.tbody`
     margin:0 auto;
-    `
+`
+
 export const Tr = styled.tr`
     &:nth-child(even){
         background:lightgray;
     }
 `
-export const Button = styled.button`
-    background:none;
-    font-size:2.6rem;
-    .edit__icon{
-        color:#003C8D;
-    }
-    .trash__icon{
-        color:#CD201F;
-    }
-`
 export const Th = styled.th`
-letter-spacing:.2rem;
+    letter-spacing:.2rem;
     background:#565555;
     font-size:1.6rem;
     color: #fff;
@@ -43,6 +34,16 @@ export const Td = styled.td`
     font-size:1.6rem;
     padding:1.0rem;
     text-align:center;
+`
+export const Button = styled.button`
+    background:none;
+    font-size:2.6rem;
+    .edit__icon{
+        color:#003C8D;
+    }
+    .trash__icon{
+        color:#CD201F;
+    }
 `
 
 export const CheckItem = styled.input`
@@ -91,3 +92,4 @@ export const CheckItem = styled.input`
 
 `
 
+// =============== END =======================

@@ -7,14 +7,14 @@ import {
 // =============== 
 
 import { Header } from "../Header/"
-import Image from '..//..//assets/MeuBox.png'
+import Image from '..//..//assets/Rings.png'
 import { Table } from "../Table";
 
 // =============== Components
 
 // =============== Funtion
 
-export function Section9() {
+export function Section11() {
 
     return (
         <>
@@ -22,14 +22,13 @@ export function Section9() {
                 <Header />
                 <ContainerImage>
                     <CentralImage src={Image}></CentralImage>
-                    <Centraltitle>meu box</Centraltitle>
+                    <Centraltitle>notificações</Centraltitle>
                 </ContainerImage>
-                <Centraltitle bar="bar" >meu box</Centraltitle>
+                <Centraltitle bar="bar" >adicionar - notificações</Centraltitle>
                 <Inputfields>
-                    <Input placeholder="cod_box :"></Input>
-                    <Input placeholder="nome_box :"></Input>
-                    <Input placeholder="endereço :"></Input>
-                    <Input placeholder="localizção :"></Input>
+                    <Input placeholder=" titulo:" ></Input>
+                    <Input placeholder="mensagem :"></Input>
+                    <Input placeholder="fonte :"></Input>
                     <Input placeholder="ativo :"></Input>
                 </Inputfields>
 

@@ -7,14 +7,14 @@ import {
 // =============== 
 
 import { Header } from "../Header/"
-import Image from '..//..//assets/MeuBox.png'
+import Image from '..//..//assets/Card.png'
 import { Table } from "../Table";
 
 // =============== Components
 
 // =============== Funtion
 
-export function Section9() {
+export function Section10() {
 
     return (
         <>
@@ -22,14 +22,13 @@ export function Section9() {
                 <Header />
                 <ContainerImage>
                     <CentralImage src={Image}></CentralImage>
-                    <Centraltitle>meu box</Centraltitle>
+                    {/* <Centraltitle>meu box</Centraltitle> */}
                 </ContainerImage>
-                <Centraltitle bar="bar" >meu box</Centraltitle>
+                <Centraltitle bar="bar" >seja associado</Centraltitle>
                 <Inputfields>
-                    <Input placeholder="cod_box :"></Input>
-                    <Input placeholder="nome_box :"></Input>
-                    <Input placeholder="endereço :"></Input>
-                    <Input placeholder="localizção :"></Input>
+                    <Input placeholder=" logo:" type="file" ></Input>
+                    <Input placeholder="titulo :"></Input>
+                    <Input placeholder="descrição :"></Input>
                     <Input placeholder="ativo :"></Input>
                 </Inputfields>
 

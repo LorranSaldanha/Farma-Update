@@ -23,6 +23,7 @@ export function Header() {
         <ButtonLink to="/cadastro">cadastro</ButtonLink>
         <ButtonLink to="/finalizarvenda">acumular troco</ButtonLink>
         <ButtonLink to="/resgatartroco">resgatar troco</ButtonLink>
+        <ButtonLink to="/meubox">meu box</ButtonLink>
       </List>
     </HamburgerMenu>
   )

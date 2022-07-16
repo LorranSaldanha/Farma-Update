@@ -7,7 +7,7 @@ import {
 
 
 import { Header } from "../Header/"
-// import Image from '..//..//assets/Card.png'
+import Image from '..//..//assets/Card.png'
 
 // =============== Icons Imported
 
@@ -24,7 +24,7 @@ export function Section10() {
             <Container>
                 <Header />
                 <ContainerImage>
-                    <CentralImage ></CentralImage>
+                    <CentralImage src={Image} ></CentralImage>
                     
                     {/* DEPRECATED */}
                     <Centraltitle>meu box</Centraltitle>

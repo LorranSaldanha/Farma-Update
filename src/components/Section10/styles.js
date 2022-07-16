@@ -12,7 +12,7 @@ export const Container = styled.div`
 `
 export const ContainerImage = styled.div`
     width: 100%;
-    height:30.0rem;
+    height:40.0rem;
     background: #003C8D;
     @media only screen and (min-width:768px){
         height: 48.0rem;
@@ -172,13 +172,6 @@ export const CheckItem = styled.input`
 `
 
 // =============== END =======================
-
-
-
-
-
-// =================== // =======================
-
 
 
 

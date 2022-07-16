@@ -1,18 +1,20 @@
 // =============== Components
 import {
     Container, ContainerImage, CentralImage,
-    Centraltitle, Inputfields, Input,
+    Centraltitle, Inputfields, Input, TableItmes, Tbody, Tr, Th, Td, ButtonIcon, CheckItem
 } from "./styles";
 
-// =============== 
 
 import { Header } from "../Header/"
-import Image from '..//..//assets/Card.png'
-import { Table } from "../Table";
+// import Image from '..//..//assets/Card.png'
 
-// =============== Components
+// =============== Icons Imported
 
-// =============== Funtion
+import { FaTrashAlt } from 'react-icons/fa';
+import { FiEdit } from 'react-icons/fi';
+
+// =============== Icons Imported
+
 
 export function Section10() {
 
@@ -21,7 +23,7 @@ export function Section10() {
             <Container>
                 <Header />
                 <ContainerImage>
-                    <CentralImage src={Image}></CentralImage>
+                    <CentralImage ></CentralImage>
                     
                     {/* DEPRECATED */}
                     <Centraltitle>meu box</Centraltitle>
@@ -36,9 +38,24 @@ export function Section10() {
                     <Input placeholder="ativo :"></Input>
                 </Inputfields>
 
-                {/* ================= Table ================= */}
-                <Table />
-                {/* ================= Table ================= */}
+                <TableItmes>
+                    <Tbody>
+                        <Tr>
+                            <Th>titulo</Th>
+                            <Th>descrição</Th>
+                            <Th>editar</Th>
+                            <Th>excluir</Th>
+                            <Th>ativar</Th>
+                        </Tr>
+                        <Tr>
+                            <Td>Materia : remedios</Td>
+                            <Td>write a message</Td>
+                            <Td><ButtonIcon type="Button"><FiEdit className="edit__icon" /></ButtonIcon></Td>
+                            <Td><ButtonIcon type="Button"><FaTrashAlt className="trash__icon" /></ButtonIcon></Td>
+                            <Td><CheckItem type='checkbox' className="switch_1" ></CheckItem></Td>
+                        </Tr>
+                    </Tbody>
+                </TableItmes>
 
 
             </Container>

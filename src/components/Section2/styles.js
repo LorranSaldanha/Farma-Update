@@ -78,39 +78,55 @@ export const Button = styled.button`
     }
 `
 
-export const ListItems = styled.div`
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
+export const TableItmes = styled.table`
     width:100%;
-    height:100% ;
+    margin: 0 ;
+    padding:1.0rem ;
+    border-collapse:collapse;
+    display:flexbox;
+    overflow-x:auto;
 `
-export const BarTop = styled.div`
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+export const Tbody = styled.tbody`
+    margin:0 auto;
+`
+
+export const Tr = styled.tr`
+    &:nth-child(even){
+        background:lightgray;
+    }
+`
+export const Th = styled.th`
+    letter-spacing:.2rem;
+    background:#565555;
+    font-size:1.6rem;
+    color: #fff;
+    font-weight:700;
+    font-family:'Montserrat';
     padding:2.0rem;
-    width: 100%;
-    height: auto;
-    margin:1.0rem;
-    &:nth-of-type(odd){
-        background:${props => props.ContentItems ? '#E0E0E0' : '#616161'};    }
-    
+    text-transform:uppercase;
 `
-export const ItemsBarTop = styled.span`
-    color:${props => props.item ? ' #777777' : '#FFF'};
-    font-family:${props => props.item ? 'Montserrat' : 'Montserrat'};
-    font-size:${props => props.item ? '1.4rem' : '1.6rem'};
-    font-weight:${props => props.item ? '700' : '700'};
-    line-height:${props => props.item ? '1.7rem' : '1.7rem'};
-    display:${props => props.item ? 'flex' : 'flex'};
-    align-items:${props => props.item ? 'center' : 'center'};
-    width:${props => props.item ? '10.0rem ' : '0 auto'};
 
-    text-transform:${props => props.item ? 'uppercase' : 'uppercase'};
+export const Td = styled.td`
+    font-family:'Montserrat';
+    font-weight:700;
+    font-size:1.6rem;
+    padding:1.0rem;
+    text-align:center;
+    text-transform:uppercase;
+    color:#777;
 
 `
+export const ButtonIcon = styled.button`
+    background:none;
+    font-size:2.6rem;
+    .edit__icon{
+        color:#003C8D;
+    }
+    .trash__icon{
+        color:#CD201F;
+    }
+`
+
 export const CheckItem = styled.input`
     font-size: 30px; 
     -webkit-appearance: none; 

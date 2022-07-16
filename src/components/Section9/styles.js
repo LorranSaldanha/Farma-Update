@@ -63,37 +63,56 @@ export const Input = styled.input`
 
 
 
+export const TableItmes = styled.table`
+    width:100%;
+    margin: 0 ;
+    padding:1.0rem ;
+    border-collapse:collapse;
+    display:flexbox;
+    overflow-x:auto;
+`
+export const Tbody = styled.tbody`
+    margin:0 auto;
+`
 
+export const Tr = styled.tr`
+    &:nth-child(even){
+        background:lightgray;
+    }
+`
+export const Th = styled.th`
+    letter-spacing:.2rem;
+    background:#565555;
+    font-size:1.6rem;
+    color: #fff;
+    font-weight:700;
+    font-family:'Montserrat';
+    padding:2.0rem;
+    text-transform:uppercase;
+`
 
-
-// =================== // =======================
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export const Td = styled.td`
+    font-family:'Montserrat';
+    font-weight:700;
+    font-size:1.6rem;
+    padding:1.0rem;
+    text-align:center;
+    text-transform:uppercase;
+    color:#777;
+`
+export const ButtonIcon = styled.button`
+    background:none;
+    font-size:2.6rem;
+    .edit__icon{
+        color:#003C8D;
+    }
+    .trash__icon{
+        color:#CD201F;
+    }
+`
 
 export const CheckItem = styled.input`
-    font-size: 30px;
+    font-size: 30px; 
     -webkit-appearance: none; 
     -moz-appearance: none; 
     appearance: none; 
@@ -129,7 +148,6 @@ export const CheckItem = styled.input`
     left: 0; 
     -webkit-transition: all .2s ease-in-out; 
     transition: all .2s ease-in-out; 
-    
     /* ============================== */
 
     }
@@ -138,4 +156,36 @@ export const CheckItem = styled.input`
     } 
 
 `
+
+// =============== END =======================
+
+
+
+
+
+// =================== // =======================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

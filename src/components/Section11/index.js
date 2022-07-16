@@ -8,11 +8,7 @@ import {
 
 import { Header } from "../Header/"
 import Image from '..//..//assets/Rings.png'
-import { Table } from "../Table";
 
-// =============== Components
-
-// =============== Funtion
 
 export function Section11() {
 
@@ -31,11 +27,6 @@ export function Section11() {
                     <Input placeholder="fonte :"></Input>
                     <Input placeholder="ativo :"></Input>
                 </Inputfields>
-
-                {/* ================= Table ================= */}
-                <Table />
-                {/* ================= Table ================= */}
-
 
             </Container>
         </>

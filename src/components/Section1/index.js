@@ -1,21 +1,32 @@
 import {
     Container, ContainerImage, CentralImage,
-    Centraltitle, Inputfields, Input, BarTop,
-    ItemsBarTop, CheckItem, Button
+    Centraltitle, Inputfields, Input,
+    Button, TableItmes, Tbody, Tr, Th, Td, ButtonIcon, CheckItem
 } from "./styles";
 
 import { useState, useEffect } from "react";
 import api from "../../services/api"
 import Image from '..//..//assets/Plus.png'
 import { Header } from "../Header/"
-import { Table } from "../Table";
+
+// =============== Icons Imported
+
+import { FaTrashAlt } from 'react-icons/fa';
+import { FiEdit } from 'react-icons/fi';
+
+// =============== Icons Imported
 
 
 export function Section1() {
     const [maisVantagens, setMaisVantagens] = useState([])
     const [nomeEmpresa, setNomeEmpresa] = useState("")
+    // ================= EDITED ==================
+    const [endereco, setEndereco] = useState("")
+    const [categoria, setCategoria] = useState("")
+    // ================= EDITED ==================
+
     const [beneficios, setBeneficios] = useState("")
-     const [image,setImage] = useState(null);
+    const [image, setImage] = useState(null);
     const [ativo, setativo] = useState("")
 
     useEffect(() => {
@@ -39,10 +50,16 @@ export function Section1() {
         const formData = new FormData()
         formData.append("image", image)
         formData.append("nomeEmpresa", nomeEmpresa)
+
+        // ================= EDITED ==================
+        formData.append("endereco", endereco)
+        formData.append("categoria", categoria)
+        // ================= EDITED ==================
+
         formData.append("beneficios", beneficios)
         formData.append("ativo", ativo === "true" ? true : false)
         console.log(image)
-        await api.post("/maisVantagens",  formData).then(result => console.log(result))
+        await api.post("/maisVantagens", formData).then(result => console.log(result))
     }
     // ============================
     // ============================
@@ -58,16 +75,44 @@ export function Section1() {
 
                 <Inputfields >
 
-                    <Input placeholder="logo :" type="file"  onChange={(e) => setImage(e.target.files[0])} />
+                    <Input placeholder="logo :" type="file" onChange={(e) => setImage(e.target.files[0])} />
 
-                    <Input  value={nomeEmpresa} onChange={(e) => setNomeEmpresa(e.target.value)}  placeholder="nome da empresa :" />
-                    <Input value={beneficios} onChange={(e) => setBeneficios(e.target.value)} placeholder="benefícios :"/>
-                    <Input placeholder="localização gps (latitude/longitude) :"/>
+                    <Input value={nomeEmpresa} onChange={(e) => setNomeEmpresa(e.target.value)} placeholder="nome da empresa :" />
+                    {/* ================= EDITED ================== */}
+
+                    <Input value={endereco} onChange={(e) => setEndereco(e.target.value)} placeholder="endereço :" />
+                    <Input value={categoria} onChange={(e) => setCategoria(e.target.value)} placeholder="categoria :" />
+                    {/* ================= EDITED ================== */}
+
+                    <Input value={beneficios} onChange={(e) => setBeneficios(e.target.value)} placeholder="benefícios :" />
+                    <Input placeholder="localização :" />
                     <Input value={ativo} onChange={(e) => setativo(e.target.value)} placeholder="ativo :" />
 
                     <Button onClick={(e) => handleClick(e)} >Enviar</Button>
+
                 </Inputfields>
-                <Table/>
+
+                <TableItmes>
+                    <Tbody>
+                        <Tr>
+                            <Th>central</Th>
+                            <Th>endereço</Th>
+                            <Th>editar</Th>
+                            <Th>excluir</Th>
+                            <Th>ativar</Th>
+                        </Tr>
+                        <Tr>
+                            <Td>flavio calçados</Td>
+                            <Td>rua 24 jardim dolorido</Td>
+                            <Td><ButtonIcon type="button"><FiEdit className="edit__icon" /></ButtonIcon></Td>
+                            <Td><ButtonIcon type="button"><FaTrashAlt className="trash__icon" /></ButtonIcon></Td>
+                            <Td><CheckItem type='checkbox' className="switch_1" ></CheckItem></Td>
+                        </Tr>
+                    </Tbody>
+                </TableItmes>
+
+                {/* ================= MIXED ================== */}
+
                 {/* <BarTop>
                     <ItemsBarTop>central</ItemsBarTop>
                     <ItemsBarTop>endereço</ItemsBarTop>

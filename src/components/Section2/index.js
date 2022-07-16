@@ -1,13 +1,22 @@
 import {
     Container, ContainerImage, CentralImage,
-    Centraltitle, Inputfields, Input, BarTop,
-    ItemsBarTop, CheckItem, Button
+    Centraltitle, Inputfields, Input,
+    Button, TableItmes, Tbody, Tr, Th, Td, ButtonIcon, CheckItem
 } from "./styles";
+
 
 import { useState, useEffect } from "react";
 import api from "../../services/api"
 import { Header } from "../Header/"
 import Image from '..//..//assets/Services.png'
+
+// =============== Icons Imported
+
+import { FaTrashAlt } from 'react-icons/fa';
+import { FiEdit } from 'react-icons/fi';
+
+// =============== Icons Imported
+
 
 export function Section2() {
     const [servicos, setServicos] = useState([])
@@ -76,7 +85,30 @@ export function Section2() {
                     <Input value={ativo} onChange={(e) => setativo(e.target.value)} placeholder="ativo :" />
                     <Button onClick={(e) => handleClick(e)}>Enviar</Button>
                 </Inputfields>
-                <BarTop>
+
+
+                <TableItmes>
+                    <Tbody>
+                        <Tr>
+                            <Th>titulo</Th>
+                            <Th>descrição</Th>
+                            <Th>editar</Th>
+                            <Th>excluir</Th>
+                            <Th>ativar</Th>
+                        </Tr>
+                        <Tr>
+                            <Td>Materia : remedios</Td>
+                            <Td>Material : vacine seu filho</Td>
+                            <Td><ButtonIcon type="Button"><FiEdit className="edit__icon" /></ButtonIcon></Td>
+                            <Td><ButtonIcon type="Button"><FaTrashAlt className="trash__icon" /></ButtonIcon></Td>
+                            <Td><CheckItem type='checkbox' className="switch_1" ></CheckItem></Td>
+                        </Tr>
+                    </Tbody>
+                </TableItmes>
+
+                {/* ============== MIXED ============== */}
+
+                {/* <BarTop>
                     <ItemsBarTop>titulo</ItemsBarTop>
                     <ItemsBarTop>descrição</ItemsBarTop>
                     <ItemsBarTop>ativar</ItemsBarTop>
@@ -88,7 +120,7 @@ export function Section2() {
                         <CheckItem type='checkbox' className="switch_1" value={item.ativo}></CheckItem>
                     </BarTop>
                 ))}
-                <BarTop ContentItems></BarTop>
+                <BarTop ContentItems></BarTop> */}
             </Container>
         </>
     );

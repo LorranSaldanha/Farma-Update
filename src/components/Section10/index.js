@@ -1,7 +1,8 @@
 // =============== Components
 import {
     Container, ContainerImage, CentralImage,
-    Centraltitle, Inputfields, Input, TableItmes, Tbody, Tr, Th, Td, ButtonIcon, CheckItem
+    Centraltitle, Inputfields, Input, 
+    TableItmes, Tbody, Tr, Th, Td, ButtonIcon, CheckItem
 } from "./styles";
 
 

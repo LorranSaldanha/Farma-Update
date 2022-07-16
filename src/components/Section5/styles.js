@@ -80,15 +80,6 @@ export const Button = styled.button`
     }
 `
 
-export const ListItems = styled.div`
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    width:100%;
-    height:100% ;
-`
-
 export const TableItmes = styled.table`
     width:100%;
     margin: 0 ;
@@ -123,6 +114,8 @@ export const Td = styled.td`
     font-size:1.6rem;
     padding:1.0rem;
     text-align:center;
+    text-transform:uppercase;
+    color:#777;
 `
 export const ButtonIcon = styled.button`
     background:none;
@@ -134,8 +127,6 @@ export const ButtonIcon = styled.button`
         color:#CD201F;
     }
 `
-
-
 export const CheckItem = styled.input`
     font-size: 30px; 
     -webkit-appearance: none; 
@@ -183,3 +174,4 @@ export const CheckItem = styled.input`
 
 `
 
+// ================= END

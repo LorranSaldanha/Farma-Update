@@ -23,7 +23,7 @@ export const CentralImage = styled.img`
         display:block;
         border:solid #FFF .060rem;
         width:60%;
-        margin:10.0rem auto;
+        margin:12.0rem auto;
         border-radius:2.0rem;
         -webkit-box-shadow: 0px 0px 20px 5px rgba(238, 238, 238, 1);
         -moz-box-shadow: 0px 0px 20px 5px rgba(238, 238, 238, 1);

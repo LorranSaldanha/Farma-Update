@@ -58,10 +58,10 @@ export const ButtonLink = styled.button`
     font-size:1.6rem;
     color:${(props) => props.color ? "#FFF" : "#003C8D"};
     text-transform:${(props) => props.color ? "uppercase" : "inicial"};
+    margin:${(props) => props.color ? "3.0rem 1.5rem" : "1.5rem "};
     &::first-letter{
         text-transform:capitalize;
     }
-    margin:1.5rem ;
     
     
 `

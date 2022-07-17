@@ -31,6 +31,7 @@ export const MenuButton = styled.label`
 `
 
 export const HamburgerMenu = styled.div`
+
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {

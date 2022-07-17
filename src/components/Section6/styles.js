@@ -1,17 +1,22 @@
 import styled from "styled-components";
 
-
-export const ContainerForm = styled.form`
-    margin:10.0rem 0;
-    display:block;
+export const Container = styled.div`
     width:100%;
-    height:100%;
+    height:100vh;
+    background:#003C8D;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 `
-export const FormField = styled.div`
+export const ContainerForm = styled.form`
+    width:100%;
+    display:block;
+`
+export const FormField = styled.div` 
     width:100%;
     box-sizing:border-box;
     height:auto;
-    padding:1.0rem;
+    padding:1.0rem 2.0rem ; 
 `
 export const LabelForm = styled.label`
     font-family: 'Montserrat';
@@ -22,8 +27,8 @@ export const LabelForm = styled.label`
     display:flex;
     justify-content:center;
     margin-bottom:1.0rem;
-    color: #003C8D;
-    text-transform:${props => props.word ? 'uppercase' : 'capitalize'};
+    color: #FFF;
+    text-transform:${(props) => props.word ? 'uppercase' : 'capitalize'};
 
 `
 export const InputField = styled.input`
@@ -43,32 +48,22 @@ export const InputField = styled.input`
 `
 export const ContainerButtons = styled.div`
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
     align-items:center;
     flex-wrap:wrap;
-    padding:1.0rem ;
-    margin-top:3.0rem ;
-
+    padding:1.0rem;
 `
-export const ButtonLink = styled.a`
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    line-height: 2.0rem;
-    font-size:1.8rem;
-    color:#003C8D;
-    padding:1.8rem ;
-    text-align:center;
-    background: #FFC000;
-    border-radius: 1.7rem;
-    text-decoration:none;
+export const ButtonLink = styled.a` 
+    background:${(props) => props.button ? "#CD201F" : "#FFC000"};
+    padding:1.5rem;
+    font-size:1.7rem;
+    font-weight:700;
+    font-family:"Montserrat";
+    margin:1.6rem;
+    border-radius:.9rem;
+    color:${(props) => props.button ? "#F5F5F5" : "#003C8D"};
+    text-transform:${(props) => props.button ? "uppercase" : "inicial"};
     &::first-letter{
         text-transform:capitalize;
     }
-    @media screen and (max-width:22.5em){
-    margin:1.0rem  ;
-    width:100%;
-
-    }
-
 `

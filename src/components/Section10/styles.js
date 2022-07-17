@@ -15,7 +15,7 @@ export const ContainerImage = styled.div`
     height:40.0rem;
     background: #003C8D;
     @media only screen and (min-width:768px){
-        height: 48.0rem;
+        height: 48.0rem ;
         
     }
 `

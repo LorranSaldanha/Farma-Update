@@ -4,7 +4,7 @@ export const Container = styled.div`
     width:100%;
     min-height:100vh;
     overflow-x:hidden;
-`
+    `
 export const HeroHeader = styled.header`
     background: #003C8D;
     height:23.0rem;
@@ -31,8 +31,7 @@ export const ContainerForm = styled.form`
     margin: 12.0rem auto;
     text-align:center;
     text-align:left;
-    
-    
+   
 `
 export const InputField = styled.input`
     background: ${(props) => props.changed ? " #FFC000" : " #E0E0E0"};
@@ -41,7 +40,7 @@ export const InputField = styled.input`
     font-size:2.0rem;
     font-family:"Montserrat";
     font-weight:${(props) => props.changed ? "700" : "700"};
-    text-align:${(props) => props.changedd ? "center" : ""};
+    text-align:${(props) => props.changedd ? "center" : "inicial"};
     text-transform:capitalize;
     color:${(props) => props.changed ? "#003C8D" : "#424242"};
     width:100%;
@@ -57,7 +56,6 @@ export const SubForm = styled.div`
     display:flex;
     flex-direction:column;
     
-
 `
 export const InputSub = styled.input`
     width:50%;
@@ -83,7 +81,6 @@ export const TextLabel = styled.label`
     }
     text-transform:${(props) => props.label ? "uppercase" : "capitalize"};
 `
-
 export const AreaField = styled.div`
     &::before{
         background:${(props)=> props.changed ? "purple" : "#BDBDBD"} ;

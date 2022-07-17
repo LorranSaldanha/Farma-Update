@@ -10,6 +10,9 @@ import { Section8 } from "./components/Section8/index"
 import { Section9 } from "./components/Section9/index"
 import {Section10} from "./components/Section10/index"
 import {Section11} from "./components/Section11/index"
+import { Login } from "./components/Login/index"
+
+
 export default function Router() {
   return (
     <>
@@ -25,6 +28,7 @@ export default function Router() {
       <Route  path="/meubox" element={<Section9/>} />
       <Route  path="/sejaassociado" element={<Section10/>} />
       <Route path="/notificacoes" element={<Section11/>} />
+      <Route path="/login" element={<Login/>} />
     </Routes>
     </>
   )

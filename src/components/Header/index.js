@@ -26,6 +26,7 @@ export function Header() {
         <ButtonLink to="/meubox">meu box</ButtonLink>
         <ButtonLink to="/sejaassociado">Associe-se</ButtonLink>
         <ButtonLink to="/notificacoes">notificações</ButtonLink>
+        <ButtonLink to="/login">login</ButtonLink>
       </List>
     </HamburgerMenu>
   )

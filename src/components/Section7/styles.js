@@ -4,7 +4,7 @@ export const Container = styled.div`
     width:100%;
     min-height:100vh;
     overflow-x:hidden;
-    `
+`
 export const HeroHeader = styled.header`
     background: #003C8D;
     height:23.0rem;

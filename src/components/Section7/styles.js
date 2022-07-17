@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width:100%;
-    height:100%;
+    min-height:100vh;
     overflow-x:hidden;
 `
 export const HeroHeader = styled.header`
@@ -25,61 +25,95 @@ export const TitleHero = styled.h1`
     }
 `
 export const ContainerForm = styled.form`
+    width:100%;
+    height: auto;
     padding:1.0rem;
-`
-export const LabelForm = styled.label`
-    display:flex;
-    justify-content:center;
-    align-items:center; 
-    margin:1.0rem 0;
-    color:#003C8D;
-    text-transform:${props => props.label ? 'uppercase' : 'capitalize'};
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2.0rem;
-    line-height: 39px;
-    text-align: center;
-    color: #003C8D;
-`
-export const InputField = styled.input`
-    width: 100%;
-    padding:2.0rem ;
-    background: #ECECEC;
-    border-radius: .5rem;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.6rem;
-    line-height: 1.7rem;
-    text-transform: uppercase;
-    color: #656565;
-`
-export const ContainerButtons = styled.div`
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:1.0rem;
-`
-export const Button = styled.a`
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2.0rem;
-    line-height: 3.9rem;
-    text-transform:uppercase;
-    text-align: ${props => props.price ? 'right' : 'center'};
-
-    color: #003C8D;
-    padding:2.0rem;
-    width:${props => props.button ? '50%' : '50%'};
-    background: #FFC000;
-    border-radius: 1.7rem;
+    margin: 12.0rem auto;
+    text-align:center;
+    text-align:left;
+    
     
 `
-export const LineBehavior = styled.div`
-    max-width:95%;
+export const InputField = styled.input`
+    background: ${(props) => props.changed ? " #FFC000" : " #E0E0E0"};
+    text-align:${(props) => props.changed ? "right" : "left"};
+    border-radius:1.7rem;
+    font-size:2.0rem;
+    font-family:"Montserrat";
+    font-weight:${(props) => props.changed ? "700" : "700"};
+    text-align:${(props) => props.changedd ? "center" : ""};
+    text-transform:capitalize;
+    color:${(props) => props.changed ? "#003C8D" : "#424242"};
+    width:100%;
+    padding:2.0rem;
+    margin:2.0rem 0;
+    &::placeholder{
+        color:#757575;
+        opacity:.8;
+        font-size:1.7rem;
+    }
+`
+export const SubForm = styled.div`
+    display:flex;
+    flex-direction:column;
+    
+
+`
+export const InputSub = styled.input`
+    width:50%;
+    padding:2.0rem;
+    background:#FFC000;
+    border-radius:1.7rem;
+    color:#003C8D;
+    font-weight:700;
+    font-size:2.0rem;
+    text-align:center;
+    display:block;
     margin:2.0rem auto;
-    border-top: 1px solid #656565;
+    text-transform:capitalize;
+
+`
+export const TextLabel = styled.label`
+    font-size:2.4rem;
+    color: #003C8D;
+    font-weight:700;
+    font-family:"Montserrat";
+    &::first-letter{
+        text-transform:capitalize;
+    }
+    text-transform:${(props) => props.label ? "uppercase" : "capitalize"};
+`
+
+export const AreaField = styled.div`
+    &::before{
+        background:${(props)=> props.changed ? "purple" : "#BDBDBD"} ;
+        content: "";
+        display: block;
+        margin:2.5rem auto;
+        height: 1px;
+        width: 100%;
+    }
+
+`
+export const ContentButtons = styled.div`
+    width:100%;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-wrap:wrap;
+    margin-top:2.0rem;
+`
+export const ButtonLink = styled.button`
+    width:100% ;
+    padding:2.0rem;
+    background:#25D366;
+    border:solid #EEEEEE .20rem;
+    border-radius:.9rem;
+    font-family:"Montserrat";
+    font-weight:700;
+    font-size:2.0rem;
+    color:#FFF;
+    text-transform:uppercase;
+    margin:3.0rem 0;
+    
 `

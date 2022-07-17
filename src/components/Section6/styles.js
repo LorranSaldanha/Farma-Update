@@ -63,7 +63,6 @@ export const ButtonLink = styled.button`
         text-transform:capitalize;
     }
     
-    
 `
 export const TextFooter = styled.p`
     color:#BDBDBD;

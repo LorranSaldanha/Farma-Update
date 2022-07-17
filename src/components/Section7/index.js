@@ -1,6 +1,8 @@
 import {
     Container, HeroHeader, TitleHero, ContainerForm,
-    LabelForm, InputField, LineBehavior, Button, ContainerButtons
+    InputField,
+    TextLabel,
+    ButtonLink, ContentButtons, AreaField, SubForm, InputSub
 } from "./styles";
 
 import { Header } from "../Header/"
@@ -13,39 +15,43 @@ export function Section7() {
                 <TitleHero>finalizar venda - Acumular troco</TitleHero>
             </HeroHeader>
             <ContainerForm>
-                <LabelForm >atendente</LabelForm>
-                <InputField></InputField>
-                <LabelForm label >cpf</LabelForm>
-                <InputField></InputField>
-                <LabelForm >cliente</LabelForm>
-                <InputField></InputField>
+
+                <TextLabel >atendente</TextLabel>
+                <InputField placeholder="atendente :" />
+
+                <TextLabel label="label">cpf</TextLabel>
+                <InputField placeholder="digite apenas números :" />
+
+                <TextLabel >cliente</TextLabel>
+                <InputField placeholder="cliente :" />
+
+                <AreaField>
+                    <TextLabel  >valor disponível :</TextLabel>
+                    <InputField changed="changed" value={"r$ 00,00"} />
+                </AreaField>
+
+                <AreaField>
+                    <TextLabel  >acumular troco :</TextLabel>
+                    <InputField changed="changed" value={"r$ 00,00"} />
+                    <AreaField>
+                        <SubForm>
+                        <TextLabel  >bonus :</TextLabel>
+                            <InputSub value={"10%"}/>
+
+                            <TextLabel  >valor do bonus </TextLabel>
+                            <InputSub value={"r$ 00,00"}/>
+
+                            <TextLabel  >valor acumulado</TextLabel>
+                            <InputSub value={"r$ 00,00"}/>
+
+                        </SubForm>
+                    </AreaField>
+                </AreaField>
+
+                <ContentButtons>
+                    <ButtonLink color="color ">confirmar</ButtonLink>
+                </ContentButtons>
             </ContainerForm>
-            <LineBehavior />
-            <TitleHero title>valor disponível</TitleHero>
-            <ContainerButtons>
-                <Button button price> r$ 0,00</Button>
-            </ContainerButtons>
-            <TitleHero title>acumular troco</TitleHero>
-            <ContainerButtons>
-                <Button> r$ 0,00</Button>
-            </ContainerButtons>
-            <TitleHero title>bonus</TitleHero>
-            <ContainerButtons>
-                <Button> r$ 0,00</Button>
-            </ContainerButtons>
-            <TitleHero title>valor do bonus</TitleHero>
-            <ContainerButtons>
-                <Button > r$ 0,00</Button>
-            </ContainerButtons>
-            <TitleHero title>valor acumulado</TitleHero>
-            <ContainerButtons>
-                <Button > r$ 0,00</Button>
-            </ContainerButtons>
-            <LineBehavior />
-            <TitleHero title>saldo atual</TitleHero>
-            <ContainerButtons>
-                <Button> r$ 0,00</Button>
-            </ContainerButtons>
 
 
         </Container>

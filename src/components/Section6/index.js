@@ -1,6 +1,6 @@
 
 import {
-    Container, ContainerForm, InputField, TextLabel,
+    Container, TitleHero,HeroHeader, ContainerForm, InputField, TextLabel,
     ContentButtons, ButtonLink, TextFooter, UpperCase
 } from "./styles";
 import { Header } from "../Header/";
@@ -9,6 +9,10 @@ export function Section6() {
     return (
         <Container>
             <Header></Header>
+            <HeroHeader>
+                <TitleHero>escolha a sua operação</TitleHero>
+            </HeroHeader>
+
             <ContainerForm>
                 <TextLabel >atendente</TextLabel>
                 <InputField placeholder="atendente :" />

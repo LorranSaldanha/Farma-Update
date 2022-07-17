@@ -3,18 +3,38 @@ import styled from "styled-components";
 export const Container = styled.div`
     width:100%;
     min-height:100vh;
-    background:#003C8D;
     display:flex;
     justify-content:center;
     align-items:center;
     flex-wrap:wrap;
 `
+export const HeroHeader = styled.header`
+    background: #003C8D;
+    height:23.0rem;
+    width:100%;
+`
+
+export const TitleHero = styled.h1`
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.9rem;
+    text-align: center;
+    padding:10.0rem 0;
+    color:#FFF;
+    margin:2.0rem 0;
+    &::first-letter{
+        text-transform:capitalize;
+    }
+`
+
 export const ContainerForm = styled.form`
     width:100%;
     height: auto;
     padding:1.0rem;
-    margin: 12.0rem auto;
-    text-align:center;
+    text-align:left;
+    margin-top:3.0rem ;
 `
 export const InputField = styled.input`
     border-radius:1.7rem;
@@ -22,7 +42,7 @@ export const InputField = styled.input`
     font-weight:700;
     text-transform:capitalize;
     color:#424242;
-    background:#F5F5F5;
+    background:#D9D9D9;
     width:100%;
     padding:2.0rem;
     margin:2.0rem 0;
@@ -34,7 +54,7 @@ export const InputField = styled.input`
 `
 export const TextLabel = styled.label`
     font-size:2.5rem;
-    color: #FFF;
+    color: #003C8D;
     font-weight:700;
     font-family:"Montserrat";
     text-transform:${(props) => props.label ? "uppercase" : "capitalize"};
@@ -51,7 +71,7 @@ export const ButtonLink = styled.button`
     width:100% ;
     padding:2.0rem;
     background:${(props) => props.color ? "#F44336 " : "#FFC000"};
-    border:solid #EEEEEE .20rem;
+    border:solid #9E9E9E .02rem;
     border-radius:.9rem;
     font-family:"Montserrat";
     font-weight:700;
@@ -65,11 +85,12 @@ export const ButtonLink = styled.button`
     
 `
 export const TextFooter = styled.p`
-    color:#BDBDBD;
+    color:#424242;
     font-size:1.6rem;
     font-weight:700;
     font-family:"Montserrat";
     margin-top:5.0rem;
+    text-align:center;
 
     &::before,&::after{
     background:#BDBDBD ;

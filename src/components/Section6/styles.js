@@ -2,68 +2,65 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width:100%;
-    height:100vh;
+    min-height:100vh;
     background:#003C8D;
     display:flex;
     justify-content:center;
     align-items:center;
+    flex-wrap:wrap;
 `
 export const ContainerForm = styled.form`
     width:100%;
-    display:block;
-`
-export const FormField = styled.div` 
-    width:100%;
-    box-sizing:border-box;
-    height:auto;
-    padding:1.0rem 2.0rem ; 
-`
-export const LabelForm = styled.label`
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 39px;
-    display:flex;
-    justify-content:center;
-    margin-bottom:1.0rem;
-    color: #FFF;
-    text-transform:${(props) => props.word ? 'uppercase' : 'capitalize'};
-
+    height: auto;
+    padding:1.0rem;
+    margin: 12.0rem auto;
+    text-align:center;
 `
 export const InputField = styled.input`
-    width: 100%;
-    margin:.5rem 0;
-    padding:2.0rem ;
-    background: #ECECEC;
-    border-radius: .5rem;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.6rem;
-    line-height: 1.7rem;
-    text-transform: uppercase;
-    color: #656565;
+    border-radius:1.7rem;
+    font-size:1.6rem;
+    font-weight:700;
+    text-transform:capitalize;
+    color:#424242;
+    background:#F5F5F5;
+    width:100%;
+    padding:2.0rem;
+    margin:2.0rem 0;
+    &::placeholder{
+        color:#757575;
+        opacity:.8;
+        font-size:1.7rem;
+    }
 `
-export const ContainerButtons = styled.div`
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-wrap:wrap;
-    padding:1.0rem;
-`
-export const ButtonLink = styled.a` 
-    background:${(props) => props.button ? "#CD201F" : "#FFC000"};
-    padding:1.5rem;
-    font-size:1.7rem;
+export const TextLabel = styled.label`
+    font-size:2.5rem;
+    color: #FFF;
     font-weight:700;
     font-family:"Montserrat";
-    margin:1.6rem;
+    text-transform:${(props) => props.label ? "uppercase" : "capitalize"};
+`
+export const ContentButtons = styled.div`
+    width:100%;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-wrap:wrap;
+    margin-top:2.0rem;
+`
+export const ButtonLink = styled.button`
+    width:100% ;
+    padding:2.0rem;
+    background:${(props) => props.color ? "#DF2029 " : "#FFC000"};
     border-radius:.9rem;
-    color:${(props) => props.button ? "#F5F5F5" : "#003C8D"};
-    text-transform:${(props) => props.button ? "uppercase" : "inicial"};
+    font-family:"Montserrat";
+    font-weight:700;
+    font-size:1.6rem;
+    color:${(props) => props.color ? "#FFF" : "#003C8D"};
+    text-transform:${(props) => props.color ? "uppercase" : "inicial"};
     &::first-letter{
         text-transform:capitalize;
     }
+    margin:1.5rem ;
+    
+    
 `

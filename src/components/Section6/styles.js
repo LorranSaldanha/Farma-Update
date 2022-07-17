@@ -65,3 +65,24 @@ export const ButtonLink = styled.button`
     
     
 `
+export const TextFooter = styled.p`
+    color:#BDBDBD;
+    font-size:1.6rem;
+    font-weight:700;
+    font-family:"Montserrat";
+    margin-top:5.0rem;
+
+    &::before,&::after{
+    background:#BDBDBD ;
+    content: "";
+    display: block;
+    margin:2.5rem auto;
+    height: 1px;
+    width: 60%;
+}
+    
+`
+export const UpperCase = styled.span`
+    text-transform:uppercase;
+    text-align:center;
+`

@@ -1,6 +1,7 @@
 
 import {
-    Container, ContainerForm, InputField, TextLabel, ContentButtons, ButtonLink
+    Container, ContainerForm, InputField, TextLabel,
+    ContentButtons, ButtonLink, TextFooter,UpperCase
 } from "./styles";
 import { Header } from "../Header/";
 
@@ -15,13 +16,15 @@ export function Section6() {
                 <InputField placeholder="digite apenas números :" />
                 <TextLabel >cliente</TextLabel>
                 <InputField placeholder="cliente :" />
-            <ContentButtons>
-                <ButtonLink>acumular troco</ButtonLink>
-                <ButtonLink>resgatar troco</ButtonLink>
-                <ButtonLink color="color ">fechamento</ButtonLink>
-            </ContentButtons>
+                <ContentButtons>
+                    <ButtonLink>acumular troco</ButtonLink>
+                    <ButtonLink>resgatar troco</ButtonLink>
+                    <ButtonLink color="color ">fechamento</ButtonLink>
+                </ContentButtons>
+            <TextFooter>
+                <UpperCase>nunca esqueça de fazer o fachamento</UpperCase>  ao encerrar sua jornada.
+            </TextFooter>
             </ContainerForm>
-
         </Container>
     );
 }

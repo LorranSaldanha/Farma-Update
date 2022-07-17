@@ -50,7 +50,8 @@ export const ContentButtons = styled.div`
 export const ButtonLink = styled.button`
     width:100% ;
     padding:2.0rem;
-    background:${(props) => props.color ? "#DF2029 " : "#FFC000"};
+    background:${(props) => props.color ? "#F44336 " : "#FFC000"};
+    border:solid #EEEEEE .20rem;
     border-radius:.9rem;
     font-family:"Montserrat";
     font-weight:700;

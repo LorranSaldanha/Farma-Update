@@ -1,8 +1,8 @@
 import {
     Container, HeroHeader, TitleHero, ContainerForm,
-    InputField,
-    TextLabel,
-    ButtonLink, ContentButtons, AreaField, SubForm, InputSub
+    InputForm, TextLabel, ButtonLink, ContentButtons,
+    PartitionLine,
+
 } from "./styles";
 
 import { Header } from "../Header/"
@@ -15,42 +15,55 @@ export function Section7() {
                 <TitleHero>finalizar venda - Acumular troco</TitleHero>
             </HeroHeader>
             <ContainerForm>
+                <>
+                    <TextLabel>atendente</TextLabel>
+                    <InputForm placeholder="atendente :" />
 
-                <TextLabel >atendente</TextLabel>
-                <InputField placeholder="atendente :" />
+                    <TextLabel>cpf</TextLabel>
+                    <InputForm placeholder="digite somente números :" />
 
-                <TextLabel label="label">cpf</TextLabel>
-                <InputField placeholder="digite apenas números :" />
+                    <TextLabel>cliente</TextLabel>
+                    <InputForm placeholder="cliente :" />
 
-                <TextLabel >cliente</TextLabel>
-                <InputField placeholder="cliente :" />
+                </>
 
-                <AreaField>
-                    <TextLabel  >valor disponível :</TextLabel>
-                    <InputField changed="changed" value={"r$ 00,00"} />
-                </AreaField>
+                <>
+                    <PartitionLine />
 
-                <AreaField>
-                    <TextLabel  >acumular troco :</TextLabel>
-                    <InputField changed="changed" value={"r$ 00,00"} />
-                    <AreaField>
-                        <SubForm>
-                        <TextLabel  >bonus :</TextLabel>
-                            <InputSub value={"10%"}/>
+                    <TextLabel>Valor disponível:</TextLabel>
+                    <InputForm background="background" value={"r$ 00,00"} />
 
-                            <TextLabel  >valor do bonus </TextLabel>
-                            <InputSub value={"r$ 00,00"}/>
+                    <PartitionLine />
 
-                            <TextLabel  >valor acumulado</TextLabel>
-                            <InputSub value={"r$ 00,00"}/>
+                    <TextLabel>Acumular troco:</TextLabel>
+                    <InputForm style={{ textAlign: "center", color: "#003C8D" }} value={"r$ 00,00"} />
 
-                        </SubForm>
-                    </AreaField>
-                </AreaField>
+
+                </>
+
+                <>
+                    <PartitionLine />
+
+                    <TextLabel>Bônus:</TextLabel>
+                    <InputForm background="background" value={"r$ 00,00"} />
+
+                    <TextLabel>Valor do bônus:</TextLabel>
+                    <InputForm background="background" value={"r$ 00,00"} />
+
+                    <TextLabel>Valor acumulado:</TextLabel>
+                    <InputForm background="background" value={"r$ 00,00"} />
+
+                    <PartitionLine />
+
+                    <TextLabel style={{ textTransform: "capitalize" }} > novo saldo:</TextLabel>
+                    <InputForm style={{ background: "#FFC000", textAlign: "center", color: "#003C8D" }} value={"r$ 00,00"} />
+
+                </>
 
                 <ContentButtons>
                     <ButtonLink color="color ">confirmar</ButtonLink>
                 </ContentButtons>
+                
             </ContainerForm>
 
 

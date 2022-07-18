@@ -1,8 +1,6 @@
 import {
     Container, HeroHeader, TitleHero, ContainerForm,
-    InputField,
-    TextLabel,
-    ButtonLink, ContentButtons, AreaField, SubForm, InputSub
+    ButtonLink, ContentButtons,TextLabel,InputForm,PartitionLine,
 } from "./styles";
 
 import { Header } from "../Header/"
@@ -15,35 +13,36 @@ export function Section8() {
                 <TitleHero>finalizar venda - Resgatar troco</TitleHero>
             </HeroHeader>
             <ContainerForm>
+                <>
+                    <TextLabel>atendente</TextLabel>
+                    <InputForm placeholder="atendente :" />
 
-                <TextLabel >atendente</TextLabel>
-                <InputField placeholder="atendente :" />
+                    <TextLabel>cpf</TextLabel>
+                    <InputForm placeholder="digite somente números :" />
 
-                <TextLabel label="label">cpf</TextLabel>
-                <InputField placeholder="digite apenas números :" />
+                    <TextLabel>cliente</TextLabel>
+                    <InputForm placeholder="cliente :" />
 
-                <TextLabel >cliente</TextLabel>
-                <InputField placeholder="cliente :" />
+                </>
 
-                <AreaField>
-                    <TextLabel  >valor disponível :</TextLabel>
-                    <InputField changed="changed" value={"r$ 00,00"} />
-                </AreaField>
+                <>
+                    <PartitionLine />
 
-                <AreaField>
-                    <TextLabel  >resgatar :</TextLabel>
-                    <InputSub value={"r$ 00,00"} />
+                    <TextLabel>Valor disponível:</TextLabel>
+                    <InputForm background="background" value={"r$ 00,00"} />
 
-                    <AreaField>
+                    <PartitionLine />
 
-                        <SubForm>
-                            <TextLabel  >novo saldo :</TextLabel>
-                            <InputSub value={"r$ 00,00"} />
+                    <TextLabel style={{ textTransform: "capitalize" }} >resgatar:</TextLabel>
+                    <InputForm style={{ textAlign: "center", color: "#003C8D" }} value={"r$ 00,00"} />
+
+                    <PartitionLine />
+
+                    <TextLabel style={{ textTransform: "capitalize" }} > novo saldo:</TextLabel>
+                    <InputForm style={{ textAlign: "center", color: "#003C8D" }} value={"r$ 00,00"} />
 
 
-                        </SubForm>
-                    </AreaField>
-                </AreaField>
+                </>
 
                 <ContentButtons>
                     <ButtonLink color="color ">confirmar</ButtonLink>

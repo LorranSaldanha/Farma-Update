@@ -20,6 +20,10 @@ export const CentralImage = styled.img`
     width:20%;
     margin:7.0rem auto;
     filter:invert(1);
+    @media screen and (min-width:1025px){
+        width:10%;
+    }
+
 `
 export const Centraltitle = styled.h1`
     width: 95% ;

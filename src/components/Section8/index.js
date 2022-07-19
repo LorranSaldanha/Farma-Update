@@ -1,6 +1,6 @@
 import {
     Container, HeroHeader, TitleHero, ContainerForm,
-    ButtonLink, ContentButtons,TextLabel,InputForm,PartitionLine,
+    ButtonLink, ContentButtons, TextLabel, InputForm, PartitionLine,
 } from "./styles";
 
 import { Header } from "../Header/"
@@ -41,12 +41,12 @@ export function Section8() {
                     <TextLabel style={{ textTransform: "capitalize" }} > novo saldo:</TextLabel>
                     <InputForm style={{ textAlign: "center", color: "#003C8D" }} value={"r$ 00,00"} />
 
-
                 </>
 
                 <ContentButtons>
                     <ButtonLink color="color ">confirmar</ButtonLink>
                 </ContentButtons>
+
             </ContainerForm>
 
 

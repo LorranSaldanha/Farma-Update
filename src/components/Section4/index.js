@@ -54,7 +54,7 @@ export function Section4() {
         formData.append("descricao", descricao)
         // ============ Edited ============== 
 
-        formData.append("complemento", complemento)
+        // formData.append("complemento", complemento)
 
         // ============ Edited ==============
         formData.append("tipoOferta", tipoOferta)
@@ -70,7 +70,7 @@ export function Section4() {
             <Container>
                 <Header />
                 <ContainerImage>
-                    <CentralImage src={Image}></CentralImage>
+                    <CentralImage src={Image}/>
                     <Centraltitle>ofertas</Centraltitle>
                     <ButtonSide>news</ButtonSide>
                 </ContainerImage>
@@ -88,11 +88,11 @@ export function Section4() {
                     <Input value={valor} onChange={(e) => setValor(e.target.value)} placeholder="valor :" />
 
                     {/* ============ Edited ============ */}
-                    <Input value={valor} onChange={(e) => setValor(e.target.value)} placeholder="limite_por_pessoa :" />
-                    <Input value={valor} onChange={(e) => setValor(e.target.value)} placeholder="data de encerramento :" />
+                    <Input placeholder="limite por pessoa :" />
+                    <Input placeholder="data de encerramento :" />
+                    <Input placeholder="ativar ou comprar :" />
                     {/* ============ Edited ============ */}
 
-                    <Input value={valor} onChange={(e) => setValor(e.target.value)} placeholder="ativar ou comprar :" />
                     <Input value={ativo} onChange={(e) => setativo(e.target.value)} placeholder="ativo :" />
                     <Button onClick={(e) => handleClick(e)}>Enviar</Button>
                 </Inputfields>
@@ -111,7 +111,7 @@ export function Section4() {
                             <Td>r$ xx,xx</Td>
                             <Td><ButtonIcon type="Button"><FiEdit className="edit__icon" /></ButtonIcon></Td>
                             <Td><ButtonIcon type="Button"><FaTrashAlt className="trash__icon" /></ButtonIcon></Td>
-                            <Td><CheckItem type='checkbox' className="switch_1" ></CheckItem></Td>
+                            <Td><CheckItem type='checkbox' className="switch_1" /></Td>
                         </Tr>
                     </Tbody>
                 </TableItmes>

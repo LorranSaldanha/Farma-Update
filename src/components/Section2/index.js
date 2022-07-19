@@ -1,14 +1,14 @@
 import {
     Container, ContainerImage, CentralImage,
     Centraltitle, Inputfields, Input,
-    Button, TableItmes, Tbody, Tr, Th, Td, ButtonIcon, CheckItem
+    Button, TableItmes, Tbody, Tr, Th, Td, ButtonIcon, CheckItem,
 } from "./styles";
 
 
 import { useState, useEffect } from "react";
-import api from "../../services/api"
-import { Header } from "../Header/"
-import Image from '..//..//assets/Services.png'
+import api from "../../services/api";
+import { Header } from "../Header/";
+import Image from '..//..//assets/Services.png';
 
 // =============== Icons Imported
 
@@ -24,8 +24,11 @@ export function Section2() {
     const [titulo, setTitulo] = useState("")
     const [descricao, setDescricao] = useState("")
     const [coletaMaterial, setColetaMaterial] = useState("")
+    // ============== // =================
     const [tempo, setTempo] = useState("")
     const [resultado, setResultado] = useState("")
+    // ============== // =================
+
     const [recomendacao, setRecomendacao] = useState("")
     const [image, setImage] = useState(null);
     const [image2, setImage2] = useState(null);
@@ -56,8 +59,12 @@ export function Section2() {
         formData.append("titulo", titulo)
         formData.append("descricao", descricao)
         formData.append("coletaMaterial", coletaMaterial)
+        // ============== // =================
+
         formData.append("tempo", tempo)
         formData.append("resultado", resultado)
+        // ============== // =================
+
         formData.append("recomendacao", recomendacao)
         formData.append("ativo", ativo === "true" ? true : false)
 
@@ -71,7 +78,7 @@ export function Section2() {
                     <CentralImage src={Image}></CentralImage>
                     <Centraltitle>serviços</Centraltitle>
                 </ContainerImage>
-                <Centraltitle bar >adicionar serviços</Centraltitle>
+                <Centraltitle bar="bar" >adicionar serviços</Centraltitle>
                 <Inputfields>
                     <Input placeholder="logo :" type="file" onChange={(e) => setImage(e.target.files[0])} />
                     <Input placeholder="banner :" type="file" onChange={(e) => setImage2(e.target.files[0])} />
@@ -79,11 +86,16 @@ export function Section2() {
                     <Input value={titulo} onChange={(e) => setTitulo(e.target.value)} placeholder="titulo :" />
                     <Input value={descricao} onChange={(e) => setDescricao(e.target.value)} placeholder="descrição :" />
                     <Input value={coletaMaterial} onChange={(e) => setColetaMaterial(e.target.value)} placeholder="coleta material :" />
+                    {/* ============== // ============ */}
+
                     <Input value={tempo} onChange={(e) => setTempo(e.target.value)} placeholder="tempo :" />
                     <Input value={resultado} onChange={(e) => setResultado(e.target.value)} placeholder="resultado :" />
+                    {/* ============== // ============ */}
                     <Input value={recomendacao} onChange={(e) => setRecomendacao(e.target.value)} placeholder="recomendação :" />
                     <Input value={ativo} onChange={(e) => setativo(e.target.value)} placeholder="ativo :" />
+
                     <Button onClick={(e) => handleClick(e)}>Enviar</Button>
+
                 </Inputfields>
 
 
@@ -101,7 +113,7 @@ export function Section2() {
                             <Td>Material : vacine seu filho</Td>
                             <Td><ButtonIcon type="Button"><FiEdit className="edit__icon" /></ButtonIcon></Td>
                             <Td><ButtonIcon type="Button"><FaTrashAlt className="trash__icon" /></ButtonIcon></Td>
-                            <Td><CheckItem type='checkbox' className="switch_1" ></CheckItem></Td>
+                            <Td><CheckItem type='checkbox' className="switch_1" /></Td>
                         </Tr>
                     </Tbody>
                 </TableItmes>

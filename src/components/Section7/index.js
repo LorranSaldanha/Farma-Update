@@ -38,7 +38,6 @@ export function Section7() {
                     <TextLabel>Acumular troco:</TextLabel>
                     <InputForm style={{ textAlign: "center", color: "#003C8D" }} value={"r$ 00,00"} />
 
-
                 </>
 
                 <>

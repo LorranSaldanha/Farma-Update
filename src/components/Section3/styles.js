@@ -29,6 +29,7 @@ export const Centraltitle = styled.h1`
     border-radius:${props => props.bar ? '3.9rem' : 'none'};
     padding:${props => props.bar ? '1.0rem ' : '3.0rem 0'};
     color:${props => props.bar ? '#656565' : '#FFF'};
+
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -38,11 +39,11 @@ export const Centraltitle = styled.h1`
     text-transform: uppercase;
 
 `
-export const Inputfields = styled.form`
+export const FormField = styled.form`
     width:100%;
     padding:0 1.0rem;
 `
-export const Input = styled.input`
+export const InputField = styled.input`
     width: 100%;
     margin:.5rem 0;
     padding:2.0rem ;
@@ -56,46 +57,19 @@ export const Input = styled.input`
     text-transform: uppercase;
     color: #656565;
 `
+// ========== Table ===========
 
-export const Button = styled.button`
-    width: 100%;
-    margin:3.0rem 0;
-    padding:2.0rem ;
-    background: #003C8D;
-    border-radius: .5rem;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.6rem;
-    line-height: 1.7rem;
-    text-transform: uppercase;
-    color: white;
-
-    &:hover {
-        cursor: pointer;
-        background: #003C6F;
-    }
-`
-
-export const ListItems = styled.div`
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    width:100%;
-    height:100% ;
-`
 export const TableItmes = styled.table`
     width:100%;
     margin: 0 ;
     padding:1.0rem ;
     border-collapse:collapse;
-    display:flexbox;
+    display:flex;
     overflow-x:auto;
 `
 export const Tbody = styled.tbody`
     margin:0 auto;
 `
-
 export const Tr = styled.tr`
     &:nth-child(even){
         background:lightgray;
@@ -178,5 +152,3 @@ export const CheckItem = styled.input`
     } 
 
 `
-
-// ================= END

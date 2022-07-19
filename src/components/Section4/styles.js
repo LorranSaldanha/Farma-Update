@@ -6,7 +6,7 @@ export const Container = styled.div`
     align-items:center;
     flex-wrap:wrap;
     width:100%;
-    height:auto;
+    height: auto;
 `
 export const ContainerImage = styled.div`
     width: 100%;
@@ -89,16 +89,15 @@ export const ListItems = styled.div`
 // ==================
 export const TableItmes = styled.table`
     width:100%;
-    margin: 0 ;
+    margin: 0 auto ;
     padding:1.0rem ;
     border-collapse:collapse;
-    display:flexbox;
+    display:flex;
     overflow-x:auto;
 `
 export const Tbody = styled.tbody`
     margin:0 auto;
 `
-
 export const Tr = styled.tr`
     &:nth-child(even){
         background:lightgray;

@@ -58,28 +58,6 @@ export const Input = styled.input`
     text-transform: uppercase;
     color: #656565;
 `
-
-export const Button = styled.button`
-    width: 100%;
-    margin:3.0rem 0;
-    padding:2.0rem ;
-    background: #003C8D;
-    border-radius: .5rem;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.6rem;
-    line-height: 1.7rem;
-    text-transform: uppercase;
-    color: white;
-
-    &:hover {
-        cursor: pointer;
-        background: #003C6F;
-    }
-`
-
 export const TableItmes = styled.table`
     width:100%;
     margin: 0 ;
@@ -173,5 +151,3 @@ export const CheckItem = styled.input`
     } 
 
 `
-
-// ================= END

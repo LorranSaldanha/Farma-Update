@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom"
-import styled from 'styled-components'
+import { Link } from "react-router-dom";
+import styled from 'styled-components';
+
 
 export const MenuToggle = styled.input`
   opacity:0;
@@ -19,13 +20,14 @@ export const MenuToggle = styled.input`
   &:checked ~ .menu__box {
   left: 0 ;
 }
+
 `
 export const MenuButton = styled.label`
-  top: 4.0rem;
-  left: 2.0rem;
-  width: 3.5rem;
+  top: 3.5rem;
+  left: 1.6rem;
+  width: 3.0rem;
   height: 3.0rem;
-  cursor: pointer;
+  cursor: default;
   z-index: 999999;
   position: absolute;
 `
@@ -39,16 +41,16 @@ export const HamburgerMenu = styled.div`
   position: absolute;
   width: 100%;
   height: .3rem;
-  background-color: #BDBDBD;
+  background-color: #FFF;
   transition-duration: .25s;
 }
 .menu__btn > span::before {
   content: '';
-  top: -1.3rem;
+  top: -1.2rem;
 }
 .menu__btn > span::after {
   content: '';
-  top: 1.3rem;
+  top: 1.2rem;
 }
 `
 export const Span = styled.span`
@@ -61,15 +63,20 @@ export const List = styled.ul`
   top: 0;
   left: -100%;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   margin:-5.0rem 0;
-  padding: 10.0rem ;
   list-style: none;
   background-color: #003C8D;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
   transition-duration: .25s;
-`
+  @media screen and (max-width:360px){
+    padding:1.0rem;
+  }
 
+`
+export const Layer = styled.div`
+  margin:10.0rem 0;
+`
 export const ButtonLink =styled(Link)`
     margin:1.0rem 0;
     margin-bottom: 1em;
@@ -84,6 +91,10 @@ export const ButtonLink =styled(Link)`
     letter-spacing: -0.05em;
     text-transform: uppercase;
     text-decoration:none;
+    @media screen and (max-width:320px){
+    font-size:1.5rem;
+  }
+
 
 `
 

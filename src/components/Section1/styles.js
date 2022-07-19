@@ -70,10 +70,10 @@ export const Button = styled.button`
     font-size: 1.6rem;
     line-height: 1.7rem;
     text-transform: uppercase;
-    color: white;
+    color: #FFF;
 
     &:hover {
-        cursor: pointer;
+        cursor: default;
         background: #003C6F;
     }
 `
@@ -107,7 +107,6 @@ export const Th = styled.th`
     padding:2.0rem;
     text-transform:uppercase;
 `
-
 export const Td = styled.td`
     font-family:'Montserrat';
     font-weight:700;
@@ -129,7 +128,6 @@ export const ButtonIcon = styled.button`
 `
 // COMPONENTS TABELA
 
-
 export const CheckItem = styled.input`
     font-size: 30px; 
     -webkit-appearance: none; 
@@ -140,7 +138,7 @@ export const CheckItem = styled.input`
     background: #D9D9D9; 
     border-radius: 3em; 
     position: relative; 
-    cursor: pointer; 
+    cursor: default; 
     outline: none; 
     -webkit-transition: all .2s ease-in-out; 
     transition: all .2s ease-in-out; 
@@ -176,7 +174,3 @@ export const CheckItem = styled.input`
     } 
 
 `
-
-
-
-

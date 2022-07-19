@@ -22,7 +22,7 @@ export default function Router() {
       <Route  path="/masquefarmacia" element={<Section3/>} />
       <Route  path="/ofertas" element={<Section4/>} />
       <Route  path="/adicionarnossaslojas" element={<Section5/>} />
-      <Route  path="/cadastro" element={<Section6/>} />
+      <Route  path="/escolhasuaoperacao" element={<Section6/>} />
       <Route  path="/finalizarvenda" element={<Section7/>} />
       <Route  path="/resgatartroco" element={<Section8/>} />
       <Route  path="/meubox" element={<Section9/>} />

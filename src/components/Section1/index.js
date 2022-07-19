@@ -5,9 +5,9 @@ import {
 } from "./styles";
 
 import { useState, useEffect } from "react";
-import api from "../../services/api"
-import Image from '..//..//assets/Plus.png'
-import { Header } from "../Header/"
+import api from "../../services/api";
+import Image from '..//..//assets/Plus.png';
+import { Header } from "../Header/";
 
 // =============== Icons Imported
 
@@ -18,6 +18,7 @@ import { FiEdit } from 'react-icons/fi';
 
 
 export function Section1() {
+
     const [maisVantagens, setMaisVantagens] = useState([])
     const [nomeEmpresa, setNomeEmpresa] = useState("")
     // ================= EDITED ==================
@@ -61,17 +62,16 @@ export function Section1() {
         console.log(image)
         await api.post("/maisVantagens", formData).then(result => console.log(result))
     }
-    // ============================
-    // ============================
+
     return (
         <>
             <Container>
                 <Header />
                 <ContainerImage>
-                    <CentralImage src={Image}></CentralImage>
+                    <CentralImage src={Image} />
                     <Centraltitle>mais vantagens</Centraltitle>
                 </ContainerImage>
-                <Centraltitle bar >adicionar empresa conveniada</Centraltitle>
+                <Centraltitle bar="bar" >adicionar empresa conveniada</Centraltitle>
 
                 <Inputfields >
 
@@ -106,7 +106,7 @@ export function Section1() {
                             <Td>rua 24 jardim dolorido</Td>
                             <Td><ButtonIcon type="button"><FiEdit className="edit__icon" /></ButtonIcon></Td>
                             <Td><ButtonIcon type="button"><FaTrashAlt className="trash__icon" /></ButtonIcon></Td>
-                            <Td><CheckItem type='checkbox' className="switch_1" ></CheckItem></Td>
+                            <Td><CheckItem type='checkbox' className="switch_1" /></Td>
                         </Tr>
                     </Tbody>
                 </TableItmes>
@@ -126,6 +126,7 @@ export function Section1() {
                     </BarTop>
                 ))}
                 <BarTop ContentItems></BarTop> */}
+                
             </Container>
         </>
     );

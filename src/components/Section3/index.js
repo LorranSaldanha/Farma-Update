@@ -1,10 +1,11 @@
 import {
     Container, ContainerImage, CentralImage,
-    Centraltitle, Inputfields, Input, TableItmes, Tbody, Tr, Th, Td, ButtonIcon, CheckItem,
+    Centraltitle, FormField, InputField,
+    TableItmes, Tbody, Tr, Th, Td, ButtonIcon, CheckItem,
 } from "./styles";
 
-import { Header } from "../Header/"
-import Image from '..//..//assets/MaisQueFarmacia.png'
+import { Header } from "../Header/";
+import Image from '..//..//assets/MaisQueFarmacia.png';
 
 // =============== Icons Imported
 
@@ -20,22 +21,22 @@ export function Section3() {
             <Container>
                 <Header />
                 <ContainerImage>
-                    <CentralImage src={Image}></CentralImage>
+                    <CentralImage src={Image}/>
                     <Centraltitle>mais que farmacia</Centraltitle>
                 </ContainerImage>
-                <Centraltitle bar >adicionar mais que farmacia</Centraltitle>
-                <Inputfields>
-                    <Input placeholder="logo :" type="file" ></Input>
-                    <Input placeholder="banner :" type="file" ></Input>
-                    <Input placeholder="categoria principal :"></Input>
-                    <Input placeholder="titulo :"></Input>
-                    <Input placeholder="descrição :"></Input>
-                    <Input placeholder="coleta material :"></Input>
-                    <Input placeholder="tempo :"></Input>
-                    <Input placeholder="resultado :"></Input>
-                    <Input placeholder="recomendação :"></Input>
-                    <Input placeholder="ativo :"></Input>
-                </Inputfields>
+                <Centraltitle bar="bar" >adicionar mais que farmacia</Centraltitle>
+                <FormField>
+                    <InputField placeholder="logo :" type="file" />
+                    <InputField placeholder="banner :" type="file" />
+                    <InputField placeholder="categoria principal :"/>
+                    <InputField placeholder="titulo :"/>
+                    <InputField placeholder="descrição :"/>
+                    <InputField placeholder="coleta material :"/>
+                    <InputField placeholder="tempo :"/>
+                    <InputField placeholder="resultado :"/>
+                    <InputField placeholder="recomendação :"/>
+                    <InputField placeholder="ativo :"/>
+                </FormField>
         
                 <TableItmes>
                     <Tbody>
@@ -47,7 +48,7 @@ export function Section3() {
                             <Th>ativar</Th>
                         </Tr>
                         <Tr>
-                            <Td>imunize</Td>
+                            <Td>remedios</Td>
                             <Td>rua 24 - jardim dolorido</Td>
                             <Td><ButtonIcon type="Button"><FiEdit className="edit__icon" /></ButtonIcon></Td>
                             <Td><ButtonIcon type="Button"><FaTrashAlt className="trash__icon" /></ButtonIcon></Td>

@@ -12,7 +12,7 @@ export const Container = styled.div`
 `
 export const ContainerImage = styled.div`
     width: 100%;
-    height: 35.0rem auto;
+    height: 38.0rem ;
     background: #003C8D;
 `
 export const CentralImage = styled.img`

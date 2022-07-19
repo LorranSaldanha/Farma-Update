@@ -82,7 +82,7 @@ export const TableItmes = styled.table`
     margin: 0 ;
     padding:1.0rem ;
     border-collapse:collapse;
-    display:flexbox;
+    display:flex;
     overflow-x:auto;
 `
 export const Tbody = styled.tbody`

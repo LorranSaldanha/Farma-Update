@@ -1,133 +1,174 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    width:100%;
+    min-height:100vh;
+`
+// ========== Image ==========
+export const WrapperHeader = styled.header`
+    background:#003C8D;
+    width:100%;
+    min-height:30.0rem ;
+    padding:2.0rem;
+
+    @media screen and (min-width:1280px){
+        max-width:50.0rem;
+        border-radius:0 0 3.0rem;
+    }
+`
+export const WrapperImage = styled.img`
+    width: 100%;
+    max-width:50% ;
+    display: block;
+    margin:0 auto;
+
+
+`
+// ========== Image ==========
+
+// ========== Title ==========
+export const TitleCentral = styled.h1`
+    text-align: center;
+    text-transform:uppercase;
+    font-family:var(--title-font);
+    font-weight:700;
+    letter-spacing:.03rem;
+    border-radius:2.5rem;
+    color:var(--title-color-primary);
+    
+    @media screen and (min-width:1280px){
+        max-width:50.0rem;
+    }
+
+
+`
+// ========== Title ==========
+
+// ========== Form ==========
+export const FormFiled = styled.form`
+    width:100%;
     display:flex;
+    flex-direction:column;
     justify-content:center;
     align-items:center;
-    flex-wrap:wrap;
-    width:100%;
-    height:auto;
-    position:absolute;
-    z-index:0;
-`
-export const ContainerImage = styled.div`
-    width: 100%;
-    height: 28.0rem;
-    background: #003C8D;
-`
-export const CentralImage = styled.img`
-    display:block;
-    margin:5.0rem auto;
-`
-export const Centraltitle = styled.h1`
-    width: 95% ;
-    height: auto;
-
-    background:${props => props.bar ? '#D9D9D9' : 'transparent'};
-    font-size:${props => props.bar ? '1.8rem' : '2.4rem'};
-    margin:${props => props.bar ? '3.0rem auto' : '-10.0rem auto'};
-    border-radius:${props => props.bar ? '3.9rem' : 'none'};
-    padding:${props => props.bar ? '1.0rem ' : '3.0rem 0'};
-    color:${props => props.bar ? '#656565' : '#FFF'};
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    line-height: 2.8rem;
-    text-align: center;
-    letter-spacing: -0.05em;
-    text-transform: uppercase;
-
-`
-export const Inputfields = styled.form`
-    width:100%;
-    padding:0 1.0rem;
-`
-export const Input = styled.input`
-    width: 100%;
-    margin:.5rem 0;
-    padding:2.0rem ;
-    background: #ECECEC;
-    border-radius: .5rem;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.6rem;
-    line-height: 1.7rem;
-    text-transform: uppercase;
-    color: #656565;
-`
-
-export const Button = styled.button`
-    width: 100%;
-    margin:3.0rem 0;
-    padding:2.0rem ;
-    background: #003C8D;
-    border-radius: .5rem;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.6rem;
-    line-height: 1.7rem;
-    text-transform: uppercase;
-    color: #FFF;
-
-    &:hover {
-        cursor: default;
-        background: #003C6F;
-    }
-`
-
-// COMPONENTS TABELA
-
-export const TableItmes = styled.table`
-    width:100%;
-    margin: 0 ;
-    padding:1.0rem ;
-    border-collapse:collapse;
-    display:flex;
-    overflow-x:auto;
-`
-export const Tbody = styled.tbody`
-    margin:0 auto;
-`
-
-export const Tr = styled.tr`
-    &:nth-child(even){
-        background:lightgray;
-    }
-`
-export const Th = styled.th`
-    letter-spacing:.2rem;
-    background:#565555;
-    font-size:1.6rem;
-    color: #fff;
-    font-weight:700;
-    font-family:'Montserrat';
-    padding:2.0rem;
-    text-transform:uppercase;
-`
-export const Td = styled.td`
-    font-family:'Montserrat';
-    font-weight:700;
-    font-size:1.6rem;
     padding:1.0rem;
-    text-align:center;
+    height:auto;   
+    
+    @media screen and (min-width:1280px){
+        max-width:66.0rem;
+        margin-left:51.0rem;
+    }
+`
+export const InputFields = styled.input`
+    width:100%;
+    padding:2.0rem;
+    background:var(--background-input);
+    border-radius:.5rem;
+    margin:1.0rem 0;
+    color:var(--color-font-input);
+    font-family:var(--title-font);
+    text-transform:capitalize;
+    font-size:1.6rem;
+    font-style:normal;
+    font-weight:700;
+    text-align:left;
+    
+    &::placeholder{
+        text-transform:uppercase;
+        opacity:.8;
+    }
+    
+    
+`
+export const TitleForm = styled.h1`
+    text-align: center;
     text-transform:uppercase;
-    color:#777;
-`
-export const ButtonIcon = styled.button`
-    background:none;
-    font-size:2.6rem;
-    .edit__icon{
-        color:#003C8D;
-    }
-    .trash__icon{
-        color:#CD201F;
-    }
-`
-// COMPONENTS TABELA
+    font-family:var(--title-font);
+    font-weight:700;
+    letter-spacing:.03rem;
+    border-radius:2.5rem;
+    color:var(--title-color-primary);
+    padding:2.0rem;
 
+    @media screen and (min-width:1280px){
+        max-width: 70.0rem;
+        color:var(--title-color-secondary);
+        background:var(--background-title);
+        border-radius:0 3.0rem 3.0rem 0;
+        margin-left:50.0rem;
+        margin-top:-26.0rem;
+
+    }
+    
+`
+export const ButtonForm = styled.button`
+    background:#003C8D;
+    color:var( --title-color-primary);
+    font-family:var(--title-font);
+    text-transform:uppercase;
+    font-weight:700;
+    padding:2.0rem;
+    width:100%;
+    border-radius:.5rem;
+
+
+`
+// ========== Form ==========
+
+// ========== Table ==========
+export const TableItems = styled.table`
+    width:100%;
+    border-collapse:collapse;
+    margin:0;
+    padding:1.0rem;
+    overflow-x:auto;
+    display:flex;
+    @media screen and (min-width:1280px){
+        max-width:100%;
+        margin:auto;
+        padding:0;
+
+        overflow-x:hidden;
+        padding-bottom:2.0rem;
+
+    }
+
+`
+export const TableTbody = styled.tbody`
+    margin:0 auto;
+    
+`
+export const TableTr = styled.tr`
+    &:nth-child(even){
+      background:var(--background-item-table);
+    }
+    
+`
+export const TableTh = styled.th`
+    background:var(--background-wrapper-table);
+    font-family:var(--title-font);
+    text-transform:uppercase;
+    font-weight:700;
+    color:var(--title-color-primary);
+    letter-spacing:.03rem;
+    padding:2.0rem;
+    font-size:1.6rem;
+
+    @media screen and (min-width:1280px){
+        padding: 1.0rem  10.0rem ;
+    }
+
+`
+export const TableTd =styled.td`
+    font-family:var(--title-font);
+    padding:1.0rem;
+    font-size:1.6rem;
+    text-transform:uppercase;
+    text-align:center;
+    font-weight:700;
+    color:var(--color-items-table);
+
+`
 export const CheckItem = styled.input`
     font-size: 30px; 
     -webkit-appearance: none; 
@@ -165,7 +206,7 @@ export const CheckItem = styled.input`
     left: 0; 
     -webkit-transition: all .2s ease-in-out; 
     transition: all .2s ease-in-out; 
-    
+ 
     /* ============================== */
 
     }
@@ -174,3 +215,5 @@ export const CheckItem = styled.input`
     } 
 
 `
+
+
